@@ -14,7 +14,11 @@ const courseData ={
         },
         hours:{
             lectures: 15,
-            laboratories
+            laboratories: 15,
+            profects: 15
         }
     }
 }
+
+const {lectures, laboratories, projects} = courseData.content.hours;
+const lecturesHours = courseData.content.hours.lectures;
