@@ -22,3 +22,5 @@ const courseData ={
 
 const {lectures, laboratories, projects} = courseData.content.hours;
 const lecturesHours = courseData.content.hours.lectures;
+
+console.log(lecturesHours);
