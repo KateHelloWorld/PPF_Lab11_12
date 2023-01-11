@@ -48,7 +48,7 @@ console.log(dogs.every(dog=>dog.temperament.includes('Intelligent')));
 
 console.log(dogs.map(dog=>dog.name));
 
-console.log(dogs.filter(dog=>dog.temperament.includes('Fainthful')));
+console.log(dogs.filter(dog=>dog.temperament.includes('Faithful')));
 
 console.log(dogs.reduce((allTemperaments, dog)=>{
     return [...allTemperaments, ...dog.temperament]
@@ -75,4 +75,37 @@ const courseData ={
         }
     }
 }
-console.log();
+console.log("courseData.start:",courseData.start);
+console.log("courseData.end:",courseData.end);
+
+//zadanie 4.12.1
+const moreDogs = [
+{
+    id: 'dog-4',
+    name: "Bulldog",
+    temperament: [
+        'Active',
+        'Alert',
+        'Faithful',
+        'Agressive',
+        'Intelligent',
+        'Faithful'
+    ],
+},
+{
+    id: 'dog-5',
+    name: 'Dog',
+    temperament: [
+        'Kind',
+        'Friendly',
+        'Intelligent',
+        'Loyal',
+        'Faithful' 
+    ],
+},
+]
+
+//zadanie 4.12.2
+//console.log(dogs.concat(moreDogs));
+console.log("1. Dog's names:",(dogs.concat(moreDogs)).map(dog=>dog.name));
+console.log("2. Agressive dogs:",(dogs.concat(moreDogs)).filter(dog=>dog.temperament.includes('Agressive')));
